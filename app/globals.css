@@ -26,10 +26,20 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-main {
+#main {
   background-image: url('../public/static/images/background_pattern.png');
   background-size: cover;
   background-origin: content-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply px-60;
+  scroll-snap-align: start;
 }
 
 /* FONT FACES */
